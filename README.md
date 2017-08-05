@@ -4,6 +4,8 @@ This is a simple ReactJS application that can be used to manage projects.
 
 You can input the project title in 'title' field and select the category of this project.  By clicking the 'submit' button, your new project is posted on the webpage.
 
+To delete a project, just click the 'delete' button.
+
 ## Installation & Run
 
 * Install all the required dependencies: `yarn install`
