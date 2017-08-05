@@ -1,3 +1,15 @@
+# Project Manager
+
+This is a simple ReactJS application that can be used to manage projects.
+
+You can input the project title in 'title' field and select the category of this project.  By clicking the 'submit' button, your new project is posted on the webpage.
+
+## Installation & Run
+
+* Install all the required dependencies: `yarn install`
+* Start the application: `yarn start`
+* The application will be displayed in `localhost:3000`
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
@@ -1760,7 +1772,7 @@ If you’re using [Apache HTTP Server](https://httpd.apache.org/), you need to c
     RewriteRule ^ index.html [QSA,L]
 ```
 
-It will get copied to the `build` folder when you run `npm run build`. 
+It will get copied to the `build` folder when you run `npm run build`.
 
 If you’re using [Apache Tomcat](http://tomcat.apache.org/), you need to follow [this Stack Overflow answer](https://stackoverflow.com/a/41249464/4878474).
 
