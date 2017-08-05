@@ -20,9 +20,12 @@ class Projects extends Component {
       });
     }
     return (
-      <div>
+      <div className="container">
           <h3>Projects</h3>
-          {projectItems}
+          <div className="col-md-2"></div>
+          <div className="col-md-8">
+            {projectItems}
+          </div>
       </div>
     );
   }

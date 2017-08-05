@@ -9,10 +9,10 @@ class ProjectItem extends Component {
 
   render() {
     return (
-      <li>
+      <li className="list-group-item">
           <strong>{this.props.project.title}:</strong> -
           {this.props.project.category}
-          <button href="#" onClick={this.DeleteItem.bind(this, this.props.project.id)}> Delete!</button>
+          <button className="btn btn-xs btn-danger pull-right" onClick={this.DeleteItem.bind(this, this.props.project.id)}> Delete!</button>
       </li>
     );
   }

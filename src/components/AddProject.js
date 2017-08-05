@@ -40,22 +40,28 @@ class AddProject extends Component {
       return <option key={category} value={category}>{category}</option>
     })
     return (
-      <div>
+      <div className="container">
         <h3>Add project</h3>
-        <form onSubmit={this.handleSubmit.bind(this)}>
-          <div>
-            <label>Title: </label>
-            <input type="text" ref="title" />
-          </div>
-          <div>
-            <label>Category: </label>
-            <select ref="category">
-              {categoryOptions}
-            </select>
-          </div>
-          <br />
-          <button type="submit">Submit</button>
-        </form>
+        <div className="row">
+          <div className="col-md-4"></div>
+          <form onSubmit={this.handleSubmit.bind(this)} className="form-group col-md-4">
+            <div>
+              <label>Title: </label>
+              <br />
+              <input type="text" ref="title" className="form-control" />
+            </div>
+            <br />
+            <div>
+              <label>Category: </label>
+              <br />
+              <select ref="category" className="form-control">
+                {categoryOptions}
+              </select>
+            </div>
+            <br />
+            <button type="submit" className="btn btn-success">Submit</button>
+          </form>
+        </div>
       </div>
     );
   }
