@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import uuid from 'uuid';
+import actions from '../redux/actions';
 
 class AddProject extends Component {
   constructor() {
@@ -29,10 +30,13 @@ class AddProject extends Component {
         }
       }, function(){
         // console.log(this.state);
-        this.props.addProject(this.state.newProject);
+        // this.props.addProject(this.state.newProject);
+          this.props.dispatch(actions.addPro(this.state.newProject))
       })
     }
+    // console.log('submit');
     e.preventDefault();
+
   }
 
   render() {

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ProjectItem from './ProjectItem';
 import PropTypes from 'prop-types';
+// import { connect } from 'react-redux';
 
 class Projects extends Component {
   deleteItem(id) {
@@ -9,12 +10,13 @@ class Projects extends Component {
   render() {
     let projectItems;
     if (this.props.projects) {
+      // console.log(this.props.projects);
       projectItems = this.props.projects.map( project => {
         return (
           <ProjectItem
             project={project}
-            key={project.title}
-            onDeleteItem={this.deleteItem.bind(this)}
+            key={project.id}
+            dispatch={this.props.dispatch}
           />
         );
       });
